@@ -1,0 +1,23 @@
+{
+	"name": "DNS Flusher for Chrome",
+	"version": "0.1",
+	"manifest_version": 2,
+	"default_locale": "en",
+	"description": "clear all cache!",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_title": "Clear Chrome",
+		"default_icon": "icon19.png"
+	},
+	"icons": { 
+		"16": "icon19.png",
+        "48": "icon48.png",
+        "128": "icon128.png" 
+	},
+	"permissions": [
+		"tabs"  
+	]
+}
+
