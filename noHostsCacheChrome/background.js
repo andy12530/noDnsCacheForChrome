@@ -9,7 +9,7 @@ chrome.browserAction.onClicked.addListener(function(){
             if (tab && tab.id) {
                 tabs.remove(tab.id);
             }
-        }, 3000);
+        }, 1000);
     });
 
     tabs.getSelected(null, function(tab){
