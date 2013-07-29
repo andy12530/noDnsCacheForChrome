@@ -5,14 +5,17 @@ chrome.browserAction.onClicked.addListener(function(){
         active : false,
         url: 'chrome://net-internals/#dns'
     }, function(tab) {
+        console.log("create")
         setTimeout(function() {
             if (tab && tab.id) {
                 tabs.remove(tab.id);
             }
-        }, 1000);
+        }, 300);
     });
 
     tabs.getSelected(null, function(tab){
-        tabs.reload(tab.id)
+        setTimeout(function() {
+            tabs.reload(tab.id);
+        }, 500)
     });
 });
